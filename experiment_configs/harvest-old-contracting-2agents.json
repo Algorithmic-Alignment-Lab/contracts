@@ -1,0 +1,15 @@
+[{
+  "num_workers": 8,
+  "num_timesteps": 15000000,
+  "batch_size": 64000,
+  "horizon": 1000,
+  "wandb":true,
+  "solver": true, 
+  "solver_samples":100
+  },
+  {"num_agents":[2] },
+  {
+    "environment": "harvest",
+    "contract": "HarvestFeaturemodLocalContract"
+  }
+]

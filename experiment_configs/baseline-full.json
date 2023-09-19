@@ -1,0 +1,37 @@
+[{
+  "num_workers": 8,
+  "num_timesteps": 15000000,
+  "batch_size": 64000,
+  "horizon": 1000,
+  "env_args": {
+  "image_obs": true
+  },
+  "wandb":true,
+  "num_renders":5,
+  "separate":true 
+  },
+  {"num_agents":[2,4,8] },
+  {
+    "environment": "cleanup_new",
+    "contract": "CleanupContract",
+    "model_params":{
+      "custom_model":"v1",
+      "post_fcnet_hiddens": [64,64]
+      ,"conv_filters":[[6,[3,3],1]]
+    }
+  },
+  {
+    "environment": "harvest_new",
+    "contract": "HarvestFeaturemodLocalContract",
+    "model_params":{
+      "custom_model":"v1",
+      "post_fcnet_hiddens": [64,64]
+      ,"conv_filters":[[6,[3,3],1]]
+    }
+  },
+  {
+    "environment": "selfdrive",
+    "contract": "SelfdriveContractDistprop",
+    "num_timesteps": 10000000
+  }
+]

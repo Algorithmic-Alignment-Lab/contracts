@@ -1,0 +1,26 @@
+name: contracting
+channels:
+  - defaults
+dependencies:
+  - pip=22.2.2
+  - python=3.9.13
+  - pytorch=1.10.2
+  - pip:
+    - dm-tree==0.1.7
+    - gym==0.21.0
+    - gymnasium==0.28.1
+    - imageio==2.22.4
+    - lz4==4.0.2
+    - matplotlib==3.6.2
+    - opencv-python==4.7.0.72
+    - pandas==1.5.0
+    - ray==2.2.0
+    - scikit-image==0.19.3
+    - scipy==1.9.2
+    - setuptools==59.5.0
+    - tabulate==0.9.0
+    - tensorboard==2.11.0
+    - tensorflow==2.11.0
+    - tensorflow-probability==0.19.
+    - wandb==0.15.0
+prefix: /opt/anaconda3/envs/contracting

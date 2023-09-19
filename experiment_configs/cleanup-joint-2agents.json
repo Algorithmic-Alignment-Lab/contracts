@@ -1,0 +1,25 @@
+[
+  {
+    "num_workers": 1,
+    "num_timesteps": 15000000,
+    "batch_size": 64000,
+    "horizon": 1000,
+    "env_args": {
+      "image_obs": true,
+      "concatenated_obs":true
+    },
+    "model_params":{
+      "custom_model":"v1",
+      "post_fcnet_hiddens": [256,256]
+      ,"conv_filters":[[6,[3,3],1]]
+    },
+    "wandb":true,
+    "num_renders":1,
+    "joint": true
+  },
+  {"num_agents":[2]},
+  {
+    "environment": "cleanup_new",
+    "contract": "CleanupContract"
+  }
+]
