@@ -11,7 +11,6 @@ Thank you for considering contributing to the Contracts codebase. This document 
 1. Fork the repository to your GitHub account.
 2. Clone your fork locally: `git clone https://github.com/Algorithmic-Alignment-Lab/contracts.git`
 3. Navigate to the project directory: `cd contracts`
-4. Install dependencies: `npm install`
 
 ## How to Contribute
 1. Create a new branch: `git checkout -b feature/my-new-feature`
