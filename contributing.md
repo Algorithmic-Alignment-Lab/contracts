@@ -1,7 +1,7 @@
-# Contributing to Project XYZ
+# Contributing to the Contracts Codebase
 
 ## Introduction
-Thank you for considering contributing to Project XYZ. This document outlines the process for contributing to the project.
+Thank you for considering contributing to the Contracts codebase. This document outlines the process for contributing to the project.
 
 ## Prerequisites
 - `conda` installation on a system
