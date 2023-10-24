@@ -263,9 +263,8 @@ def get_solver_config(params_dict,config,checkpoint_paths) :
     config_negotiate = copy.deepcopy(config)
     config_frozen = copy.deepcopy(config)
 
-    config_frozen['num_workers'] = 0
+    config_frozen['num_workers'] = 1
     config_frozen['evaluation_num_workers'] = 0
-    config_frozen['num_gpus'] = 0
     config_negotiate['env_config']['horizon'] = params_dict['horizon']
     config_negotiate['env_config']['trainer_config'] = config_frozen
     config_negotiate['env_config']['trainer_env'] = 'ContractWrapperSubgame'
